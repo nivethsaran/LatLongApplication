@@ -7,7 +7,7 @@ locact=location.split(" ")
 namel=""
 for name in locact:
     namel=namel+name
-url="https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDulNGETzltCleX4FyRMgPwE4zwjAE2Tg8&address="+namel
+url="https://maps.googleapis.com/maps/api/geocode/json?key=<add_key_here>8&address="+namel
 try:
     page=requests.get(url)
     soup=BeautifulSoup(page.content,'html.parser')
